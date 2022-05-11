@@ -3,11 +3,17 @@ import "./App.css";
 
 const hello = "Wello, World!";
 
+const Welcome = (name) => {
+  name = "Giulia";
+  return <h1>Hello, {name}</h1>;
+};
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <h1>{hello} </h1>
+        <Welcome />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
